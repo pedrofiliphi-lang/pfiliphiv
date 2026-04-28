@@ -1,0 +1,792 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Pedro Filiphi, Advocacia & Consultoria Jurídica. Direito civil, contratual e securitário, médico. Atendimento em português e inglês. Navegantes, Santa Catarina." />
+  <meta name="theme-color" content="#19150F" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Pedro Filiphi · Advocacia &amp; Consultoria Jurídica" />
+  <meta property="og:description" content="Soluções jurídicas que asseguram. Atendimento em português e inglês. Sede em Santa Catarina, atuação em São Paulo." />
+  <meta property="og:image" content="og-preview.jpg" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:url" content="https://pedrofiliphi.com" />
+  <meta property="og:locale" content="pt_BR" />
+  <meta property="og:locale:alternate" content="en_US" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Pedro Filiphi · Advocacia &amp; Consultoria Jurídica" />
+  <meta name="twitter:description" content="Soluções jurídicas que asseguram." />
+  <meta name="twitter:image" content="og-preview.jpg" />
+
+  <title>Pedro Filiphi · Advocacia &amp; Consultoria Jurídica</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Jost:wght@200;300;400;500&display=swap" rel="stylesheet">
+
+  <link rel="icon" type="image/svg+xml" href="logo.svg" />
+  <link rel="apple-touch-icon" href="logo-256.png" />
+  <link rel="canonical" href="https://pedrofiliphi.com" />
+
+  <link rel="stylesheet" href="style.css" />
+
+  <link rel="preload" as="image" href="1-contract.jpg" />
+</head>
+<body class="is-loading">
+
+  <!-- ============== HEADER ============== -->
+  <header class="hdr" id="hdr">
+    <div class="hdr__bar">
+      <nav class="hdr__nav" aria-label="Primary">
+        <a href="#sobre"        class="hdr__link" data-pt="Escritório"   data-en="Firm">Escritório</a>
+        <a href="#atuacao"      class="hdr__link" data-pt="Atuação"      data-en="Practice">Atuação</a>
+        <a href="#detalhes"     class="hdr__link" data-pt="Áreas"        data-en="Areas">Áreas</a>
+        <a href="#internacional" class="hdr__link" data-pt="Internacional" data-en="International">Internacional</a>
+        <a href="#contato"      class="hdr__link" data-pt="Contato"      data-en="Contact">Contato</a>
+        <span class="hdr__sep"></span>
+        <button class="hdr__lang" id="langBtn" aria-label="Idioma">
+          <span class="lng-pt is-active">PT</span>
+          <span class="lng-bar">|</span>
+          <span class="lng-en">EN</span>
+        </button>
+      </nav>
+
+      <div class="hdr__mobile">
+        <button class="hdr__lang hdr__lang--mobile" id="langBtnMobileTop" aria-label="Idioma">
+          <span class="lng-pt is-active">PT</span>
+          <span class="lng-bar">|</span>
+          <span class="lng-en">EN</span>
+        </button>
+        <button class="hdr__menu" id="menuBtn" aria-label="Menu" aria-expanded="false">
+          <span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Drawer (sibling of header so backdrop-filter doesn't constrain it) -->
+  <div class="drawer" id="drawer" aria-hidden="true">
+    <button class="drawer__close" id="drawerClose" aria-label="Fechar menu">
+      <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+        <path d="M6 6 L18 18 M18 6 L6 18" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/>
+      </svg>
+    </button>
+    <a href="#sobre"        class="drawer__link" data-pt="Escritório"   data-en="Firm">Escritório</a>
+    <a href="#atuacao"      class="drawer__link" data-pt="Atuação"      data-en="Practice">Atuação</a>
+    <a href="#detalhes"     class="drawer__link" data-pt="Áreas"        data-en="Areas">Áreas</a>
+    <a href="#internacional" class="drawer__link" data-pt="Internacional" data-en="International">Internacional</a>
+    <a href="#contato"      class="drawer__link" data-pt="Contato"      data-en="Contact">Contato</a>
+    <button class="drawer__lang" id="langBtnMobile">
+      <span class="lng-pt is-active">Português</span>
+      <span class="lng-en">English</span>
+    </button>
+  </div>
+
+  <!-- ============== MORPHING LOGO ============== -->
+  <a class="logomark" id="logomark" href="#top" aria-label="Pedro Filiphi · Início">
+    <svg class="logomark__svg" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <g fill="none" stroke="#C9A96E" stroke-linecap="round" stroke-linejoin="round">
+        <line class="lm-spine" x1="120" y1="54" x2="120" y2="196" stroke-width="1.4" pathLength="100"/>
+        <circle class="lm-pivot" cx="120" cy="54" r="3.6" fill="#C9A96E" stroke="none"/>
+        <path class="lm-pf" d="M 56,70 L 120,70 A 44,33 0 0,1 120,136 L 72,136" stroke-width="1.4" pathLength="100"/>
+        <line class="lm-base" x1="98" y1="196" x2="142" y2="196" stroke-width="1.6" pathLength="100"/>
+        <path class="lm-arc" d="M 182,62 A 88,88 0 1,0 182,186" stroke-width="1.2" pathLength="100"/>
+      </g>
+    </svg>
+    <div class="logomark__text" id="logomarkText">
+      <div class="logomark__name">Pedro Filiphi</div>
+      <div class="logomark__role" data-pt="Advocacia &amp; Consultoria Jurídica" data-en="Counsel &amp; Legal Advisory">Advocacia &amp; Consultoria Jurídica</div>
+    </div>
+  </a>
+
+  <!-- ============== HERO ============== -->
+  <section class="hero" id="top">
+    <div class="hero__media" id="heroMedia">
+      <div class="hero__slide is-on">
+        <div class="hero__slide-bg" style="background-image:url('1.jpg')"></div>
+        <img src="1.jpg" alt="" class="hero__slide-img"/>
+      </div>
+      <div class="hero__slide">
+        <div class="hero__slide-bg" style="background-image:url('2.jpg')"></div>
+        <img src="2.jpg" alt="" class="hero__slide-img" loading="lazy"/>
+      </div>
+      <div class="hero__slide">
+        <div class="hero__slide-bg" style="background-image:url('3.jpg')"></div>
+        <img src="3.jpg" alt="" class="hero__slide-img" loading="lazy"/>
+      </div>
+      <div class="hero__slide">
+        <div class="hero__slide-bg" style="background-image:url('4.jpg')"></div>
+        <img src="4.jpg" alt="" class="hero__slide-img" loading="lazy"/>
+      </div>
+      <div class="hero__slide">
+        <div class="hero__slide-bg" style="background-image:url('5.jpg')"></div>
+        <img src="5.jpg" alt="" class="hero__slide-img" loading="lazy"/>
+      </div>
+      <div class="hero__slide">
+        <div class="hero__slide-bg" style="background-image:url('6.jpg')"></div>
+        <img src="6.jpg" alt="" class="hero__slide-img" loading="lazy"/>
+      </div>
+      <div class="hero__slide">
+        <div class="hero__slide-bg" style="background-image:url('7.jpg')"></div>
+        <img src="7.jpg" alt="" class="hero__slide-img" loading="lazy"/>
+      </div>
+      <div class="hero__slide">
+        <div class="hero__slide-bg" style="background-image:url('8.jpg')"></div>
+        <img src="8.jpg" alt="" class="hero__slide-img" loading="lazy"/>
+      </div>
+      <div class="hero__slide">
+        <div class="hero__slide-bg" style="background-image:url('9.jpg')"></div>
+        <img src="9.jpg" alt="" class="hero__slide-img" loading="lazy"/>
+      </div>
+      <div class="hero__slide">
+        <div class="hero__slide-bg" style="background-image:url('10.jpg')"></div>
+        <img src="10.jpg" alt="" class="hero__slide-img" loading="lazy"/>
+      </div>
+      <div class="hero__slide">
+        <div class="hero__slide-bg" style="background-image:url('11.jpg')"></div>
+        <img src="11.jpg" alt="" class="hero__slide-img" loading="lazy"/>
+      </div>
+      <div class="hero__slide">
+        <div class="hero__slide-bg" style="background-image:url('13.jpg')"></div>
+        <img src="13.jpg" alt="" class="hero__slide-img" loading="lazy"/>
+      </div>
+      <div class="hero__slide">
+        <div class="hero__slide-bg" style="background-image:url('14.jpg')"></div>
+        <img src="14.jpg" alt="" class="hero__slide-img" loading="lazy"/>
+      </div>
+      <div class="hero__slide">
+        <div class="hero__slide-bg" style="background-image:url('15.jpg')"></div>
+        <img src="15.jpg" alt="" class="hero__slide-img" loading="lazy"/>
+      </div>
+      <div class="hero__slide">
+        <div class="hero__slide-bg" style="background-image:url('16.jpg')"></div>
+        <img src="16.jpg" alt="" class="hero__slide-img" loading="lazy"/>
+      </div>
+      <div class="hero__slide">
+        <div class="hero__slide-bg" style="background-image:url('17.jpg')"></div>
+        <img src="17.jpg" alt="" class="hero__slide-img" loading="lazy"/>
+      </div>
+      <div class="hero__veil"></div>
+
+      <!-- Watermark logo, positioned with C lightly embracing the title -->
+      <svg class="hero__watermark" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <g fill="none" stroke="#C9A96E" stroke-linecap="round" stroke-linejoin="round" stroke-width="0.7">
+          <path d="M 182,62 A 88,88 0 1,0 182,186"/>
+          <circle cx="120" cy="54" r="3.6" fill="#C9A96E" stroke="none"/>
+          <line x1="120" y1="54" x2="120" y2="196"/>
+          <path d="M 56,70 L 120,70 A 44,33 0 0,1 120,136 L 72,136"/>
+          <line x1="98" y1="196" x2="142" y2="196" stroke-width="0.95"/>
+        </g>
+      </svg>
+
+      <div class="hero__grain"></div>
+    </div>
+
+    <div class="hero__wrap">
+      <div class="hero__eyebrow">
+        <span class="line"></span>
+        <span class="txt" data-pt="Advocacia &amp; Consultoria Jurídica"
+                          data-en="Counsel &amp; Legal Advisory">Advocacia &amp; Consultoria Jurídica</span>
+      </div>
+
+      <h1 class="hero__title">
+        <span class="hero__title-line"
+              data-pt="Soluções jurídicas"
+              data-en="Strategic counsel">Soluções jurídicas</span>
+        <span class="hero__title-line is-italic">
+          <span data-pt="que" data-en="that">que</span>
+          <span class="hero__title-accent"
+                data-pt="asseguram."
+                data-en="safeguards.">asseguram.</span>
+        </span>
+      </h1>
+
+      <p class="hero__sub"
+         data-pt="Defesa técnica, pareceres e assessoria estratégica e personalizada em matéria contratual e patrimonial."
+         data-en="Litigation, opinions, and bespoke strategic advisory in contractual and patrimonial matters.">
+        Defesa técnica, pareceres e assessoria estratégica e personalizada em matéria contratual e patrimonial.
+      </p>
+
+      <div class="hero__actions">
+        <a class="btn btn--ghost-light" href="https://wa.me/5548991880106?text=Ol%C3%A1%2C%20gostaria%20de%20conversar%20sobre%20uma%20demanda%20jur%C3%ADdica." target="_blank" rel="noopener">
+          <span data-pt="Falar pelo WhatsApp" data-en="Reach via WhatsApp">Falar pelo WhatsApp</span>
+          <svg width="13" height="13" viewBox="0 0 13 13" fill="none" aria-hidden="true">
+            <path d="M2 6.5h9M6.5 2l4.5 4.5L6.5 11" stroke="currentColor" stroke-width="0.9" fill="none"/>
+          </svg>
+        </a>
+      </div>
+
+      <div class="hero__meta">
+        <div class="hero__meta-item">
+          <span class="lbl" data-pt="Atendimento" data-en="Counsel">Atendimento</span>
+          <span class="val" data-pt="Português &middot; Inglês" data-en="Portuguese &middot; English">Português &middot; Inglês</span>
+        </div>
+        <div class="hero__meta-item hero__meta-item--bar">
+          <span class="lbl" data-pt="Inscrições" data-en="Bar admissions">Inscrições</span>
+          <span class="bar-val">OAB / SC&nbsp;&nbsp;55.825&nbsp;&nbsp;&middot;&nbsp;&nbsp;OAB / SP&nbsp;&nbsp;495.951</span>
+        </div>
+        <div class="hero__meta-item hero__meta-item--right">
+          <span class="lbl" data-pt="Atuação" data-en="Practice">Atuação</span>
+          <span class="val">Santa Catarina &middot; São Paulo</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- scroll indicator, bottom-right -->
+    <div class="hero__scroll" aria-hidden="true"><span></span></div>
+  </section>
+
+  <!-- ============== ESCRITÓRIO ============== -->
+  <section class="about" id="sobre">
+    <div class="wrap wrap--two">
+      <aside class="col-aside reveal">
+        <div class="num">I.</div>
+        <div class="kicker" data-pt="O Escritório" data-en="The Firm">O Escritório</div>
+      </aside>
+
+      <div class="col-main">
+        <h2 class="h2 reveal"
+            data-pt="Do detalhe vem a estratégia. Da estratégia, a tese."
+            data-en="From the detail comes the strategy. From the strategy, the thesis.">
+          Do detalhe vem a estratégia. Da estratégia, a tese.
+        </h2>
+
+        <div class="rule reveal"></div>
+
+        <p class="prose reveal"
+           data-pt="Análise rigorosa. Soluções desenhadas. Comunicação objetiva e assertiva. Cuidado com o detalhe que define o todo. Do primeiro parecer à última peça, do contrato firmado ao acordo construído."
+           data-en="Rigorous analysis. Bespoke solutions. Communication that is objective and assertive. Attention to the detail that defines the whole. From the first opinion to the final brief, from the contract signed to the settlement built.">
+          Análise rigorosa. Soluções desenhadas. Comunicação objetiva e assertiva. Cuidado com o detalhe que define o todo. Do primeiro parecer à última peça, do contrato firmado ao acordo construído.
+        </p>
+
+        <p class="prose reveal"
+           data-pt="A leitura técnica do caso pressupõe leitura técnica do tempo: jurisprudência atual, doutrina contemporânea e teses formadas além das fronteiras nacionais."
+           data-en="The technical reading of a case presupposes a technical reading of its time: current jurisprudence, contemporary doctrine, and theses formed beyond national borders.">
+          A leitura técnica do caso pressupõe leitura técnica do tempo: jurisprudência atual, doutrina contemporânea e teses formadas além das fronteiras nacionais.
+        </p>
+
+        <ul class="pillars reveal" aria-label="Princípios">
+          <li>
+            <span class="pill-num">01</span>
+            <span class="pill-t" data-pt="Análise estratégica" data-en="Strategic analysis">Análise estratégica</span>
+            <span class="pill-d" data-pt="Leitura e diagnóstico técnico antes de qualquer movimento. A análise precede a ação."
+                                 data-en="Technical reading and diagnosis precede any move. Analysis precedes action.">Leitura e diagnóstico técnico antes de qualquer movimento. A análise precede a ação.</span>
+          </li>
+          <li>
+            <span class="pill-num">02</span>
+            <span class="pill-t" data-pt="Soluções sob medida" data-en="Tailored solutions">Soluções sob medida</span>
+            <span class="pill-d" data-pt="Planos construídos de acordo com as particularidades de cada cliente."
+                                 data-en="Plans constructed in accordance with the particularities of each client.">Planos construídos de acordo com as particularidades de cada cliente.</span>
+          </li>
+          <li>
+            <span class="pill-num">03</span>
+            <span class="pill-t" data-pt="Linguagem precisa" data-en="Precise language">Linguagem precisa</span>
+            <span class="pill-d" data-pt="Cada parecer, contrato e peça é redigido com a precisão de quem sabe que a palavra escrita tem peso jurídico."
+                                 data-en="Every opinion, contract, and brief is drafted with the precision of those who understand that the written word carries legal weight.">Cada parecer, contrato e peça é redigido com a precisão de quem sabe que a palavra escrita tem peso jurídico.</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============== ATUAÇÃO (overview) ============== -->
+  <section class="atuacao" id="atuacao">
+    <div class="wrap">
+      <header class="sec-head reveal">
+        <span class="num">II.</span>
+        <span class="kicker" data-pt="Atuação" data-en="Practice Areas">Atuação</span>
+      </header>
+
+      <h2 class="h2 sec-h2 reveal"
+          data-pt="A excelência como medida."
+          data-en="Excellence as the measure.">
+        A excelência como medida.
+      </h2>
+
+      <div class="cards">
+        <article class="card reveal">
+          <div class="card__num">i</div>
+          <svg class="card__icon" viewBox="0 0 60 60" fill="none" aria-hidden="true">
+            <line x1="16" y1="11" x2="44" y2="11" stroke="currentColor" stroke-width="1.0"/>
+            <line x1="18" y1="14" x2="42" y2="14" stroke="currentColor" stroke-width="0.7"/>
+            <path d="M22 17 L21 19 L21 44 L22 46" stroke="currentColor" stroke-width="0.8" fill="none"/>
+            <line x1="29" y1="18" x2="29" y2="46" stroke="currentColor" stroke-width="0.6"/>
+            <path d="M38 17 L39 19 L39 44 L38 46" stroke="currentColor" stroke-width="0.8" fill="none"/>
+            <line x1="18" y1="46" x2="42" y2="46" stroke="currentColor" stroke-width="0.7"/>
+            <line x1="16" y1="49" x2="44" y2="49" stroke="currentColor" stroke-width="1.0"/>
+          </svg>
+          <h3 class="card__t" data-pt="Direito Civil" data-en="Civil Law">Direito Civil</h3>
+          <p class="card__p"
+             data-pt="Da relação privada ao patrimônio: obrigações, relações de consumo, responsabilidade civil e sucessões, sob a leitura técnica que cada matéria exige."
+             data-en="From private relations to patrimonial structuring: obligations, consumer relations, civil liability, and succession, under the technical reading each matter requires.">
+            Da relação privada ao patrimônio: obrigações, relações de consumo, responsabilidade civil e sucessões, sob a leitura técnica que cada matéria exige.
+          </p>
+          <a class="card__more" href="#area-civil" data-pt="Ver detalhamento" data-en="See more">Ver detalhamento →</a>
+        </article>
+
+        <article class="card reveal">
+          <div class="card__num">ii</div>
+          <svg class="card__icon" viewBox="0 0 60 60" fill="none" aria-hidden="true">
+            <path d="M16 10 L41 10 L46 15 L46 50 L16 50 Z" stroke="currentColor" stroke-width="0.9" fill="none"/>
+            <path d="M41 10 L41 15 L46 15" stroke="currentColor" stroke-width="0.7" fill="none"/>
+            <line x1="20" y1="20" x2="40" y2="20" stroke="currentColor" stroke-width="0.55"/>
+            <line x1="20" y1="24" x2="40" y2="24" stroke="currentColor" stroke-width="0.55"/>
+            <line x1="20" y1="28" x2="36" y2="28" stroke="currentColor" stroke-width="0.55"/>
+            <line x1="20" y1="32" x2="38" y2="32" stroke="currentColor" stroke-width="0.55"/>
+            <circle cx="36" cy="42" r="4.5" stroke="currentColor" stroke-width="0.85" fill="none"/>
+            <circle cx="36" cy="42" r="2" stroke="currentColor" stroke-width="0.55" fill="none"/>
+          </svg>
+          <h3 class="card__t" data-pt="Direito Contratual e Securitário"
+                              data-en="Contract &amp; Insurance Law">Direito Contratual e Securitário</h3>
+          <p class="card__p"
+             data-pt="Direito contratual com atuação verticalizada em direito securitário e operações imobiliárias. Da cláusula à execução, do sinistro à indenização, do distrato à recomposição."
+             data-en="Contract law with vertical practice in insurance and real-estate transactions. From clause to enforcement, from claim to indemnity, from rescission to recomposition.">
+            Direito contratual com atuação verticalizada em direito securitário e operações imobiliárias. Da cláusula à execução, do sinistro à indenização, do distrato à recomposição.
+          </p>
+          <a class="card__more" href="#area-contratual" data-pt="Ver detalhamento" data-en="See more">Ver detalhamento →</a>
+        </article>
+
+        <article class="card reveal">
+          <div class="card__num">iii</div>
+          <svg class="card__icon" viewBox="0 0 60 60" fill="none" aria-hidden="true">
+            <line x1="30" y1="11" x2="30" y2="33" stroke="currentColor" stroke-width="1.2"/>
+            <line x1="19" y1="22" x2="41" y2="22" stroke="currentColor" stroke-width="1.2"/>
+            <path d="M14 44 L22 44 L25 38 L29 50 L33 36 L36 44 L46 44"
+                  stroke="currentColor" stroke-width="0.9" fill="none"
+                  stroke-linejoin="round" stroke-linecap="round"/>
+          </svg>
+          <h3 class="card__t" data-pt="Direito Médico" data-en="Medical Law">Direito Médico</h3>
+          <p class="card__p"
+             data-pt="Direito médico em duas frentes: a defesa em ações de responsabilidade civil médica e a tutela do paciente diante das operadoras de saúde, da liminar para procedimentos e tratamentos à recomposição em casos de negativa de cobertura."
+             data-en="Medical law on two fronts: defense in medical liability claims and the protection of patients before healthcare providers, from injunctions for procedures and treatments to recomposition in cases of denied coverage.">
+            Direito médico em duas frentes: a defesa em ações de responsabilidade civil médica e a tutela do paciente diante das operadoras de saúde, da liminar para procedimentos e tratamentos à recomposição em casos de negativa de cobertura.
+          </p>
+          <a class="card__more" href="#area-medico" data-pt="Ver detalhamento" data-en="See more">Ver detalhamento →</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============== DETALHAMENTO ============== -->
+  <section class="detalhes" id="detalhes">
+    <div class="wrap">
+      <header class="sec-head reveal">
+        <span class="num">III.</span>
+        <span class="kicker" data-pt="Detalhamento" data-en="Areas in Detail">Detalhamento</span>
+      </header>
+
+      <h2 class="h2 sec-h2 reveal"
+          data-pt="A excelência como medida."
+          data-en="Excellence as the measure.">
+        A excelência como medida.
+      </h2>
+
+      <article class="area reveal" id="area-civil">
+        <div class="area__head">
+          <span class="area__num">01</span>
+          <h3 class="area__t" data-pt="Direito Civil" data-en="Civil Law">Direito Civil</h3>
+        </div>
+        <div class="area__body">
+          <p class="prose"
+             data-pt="A matéria civil é onde a técnica jurídica se prova: na leitura precisa das obrigações, no diagnóstico da responsabilidade, na proteção do patrimônio. A atuação acompanha a integralidade da relação privada, da redação preventiva à decisão final, do contrato firmado à execução do julgado."
+             data-en="Civil practice is where legal technique proves itself: in the precise reading of obligations, in the diagnosis of liability, in the protection of patrimony. The work follows the entirety of the private relationship, from preventive drafting to the final decision, from the contract signed to the enforcement of judgment.">
+            A matéria civil é onde a técnica jurídica se prova: na leitura precisa das obrigações, no diagnóstico da responsabilidade, na proteção do patrimônio. A atuação acompanha a integralidade da relação privada, da redação preventiva à decisão final, do contrato firmado à execução do julgado.
+          </p>
+          <ul class="area__list">
+            <li data-pt="Responsabilidade civil contratual e extracontratual"
+                data-en="Civil liability, contractual and tort">Responsabilidade civil contratual e extracontratual</li>
+            <li data-pt="Obrigações e relações de consumo"
+                data-en="Obligations and consumer relations">Obrigações e relações de consumo</li>
+            <li data-pt="Direito de família e sucessões"
+                data-en="Family and succession law">Direito de família e sucessões</li>
+            <li data-pt="Recuperação patrimonial e cobrança qualificada"
+                data-en="Asset recovery and qualified collection">Recuperação patrimonial e cobrança qualificada</li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="area reveal" id="area-contratual">
+        <div class="area__head">
+          <span class="area__num">02</span>
+          <h3 class="area__t" data-pt="Direito Contratual e Securitário"
+                              data-en="Contract &amp; Insurance Law">Direito Contratual e Securitário</h3>
+        </div>
+        <div class="area__body">
+          <p class="prose"
+             data-pt="Cláusulas mal redigidas tornam-se prejuízos previsíveis: cada cláusula é, ela própria, posição jurídica. É a partir dessa premissa que se constrói a atuação contratual do escritório, com profundidade verticalizada em direito securitário e em operações imobiliárias, da estruturação preventiva à disputa, do parecer ao contencioso especializado."
+             data-en="Poorly drafted clauses become predictable losses: each clause is, in itself, a legal position. From this premise the firm's contractual practice is built, with vertical depth in insurance and real-estate matters, from preventive structuring to dispute, from opinion to specialized litigation.">
+            Cláusulas mal redigidas tornam-se prejuízos previsíveis: cada cláusula é, ela própria, posição jurídica. É a partir dessa premissa que se constrói a atuação contratual do escritório, com profundidade verticalizada em direito securitário e em operações imobiliárias, da estruturação preventiva à disputa, do parecer ao contencioso especializado.
+          </p>
+
+          <div class="sublist">
+            <div class="sublist__row">
+              <div class="sublist__col">
+                <div class="sublist__lbl" data-pt="Securitário" data-en="Insurance">Securitário</div>
+                <ul class="area__list">
+                  <li data-pt="Contratos de seguro e resseguro: cobertura, sinistro e indenização"
+                      data-en="Insurance and reinsurance contracts: coverage, claim, and indemnity">Contratos de seguro e resseguro: cobertura, sinistro e indenização</li>
+                  <li data-pt="Negativas de cobertura e disputas com seguradoras"
+                      data-en="Coverage denials and disputes with insurers">Negativas de cobertura e disputas com seguradoras</li>
+                  <li data-pt="Seguros de pessoas, danos e responsabilidade civil"
+                      data-en="Personal, property, and liability insurance">Seguros de pessoas, danos e responsabilidade civil</li>
+                </ul>
+              </div>
+              <div class="sublist__col">
+                <div class="sublist__lbl" data-pt="Imobiliário" data-en="Real Estate">Imobiliário</div>
+                <ul class="area__list">
+                  <li data-pt="Compra e venda e incorporação imobiliária"
+                      data-en="Sale, purchase, and real-estate development">Compra e venda e incorporação imobiliária</li>
+                  <li data-pt="Distrato, resilição e recomposição contratual"
+                      data-en="Rescission, termination, and contractual recomposition">Distrato, resilição e recomposição contratual</li>
+                  <li data-pt="Locação, comodato e cessão de direitos"
+                      data-en="Lease, loan-for-use, and assignment of rights">Locação, comodato e cessão de direitos</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="sublist__transversal">
+              <div class="sublist__lbl sublist__lbl--center" data-pt="Transversal" data-en="Cross-cutting">Transversal</div>
+              <ul class="area__list area__list--inline">
+                <li data-pt="Assessoria a corretores e empresas"
+                    data-en="Counsel to brokers and corporate clients">Assessoria a corretores e empresas</li>
+                <li data-pt="Análise de contratos, apólices e <i>due diligence</i> contratual"
+                    data-en="Contract, policy, and contractual <i>due diligence</i> review">Análise de contratos, apólices e <i>due diligence</i> contratual</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="area reveal" id="area-medico">
+        <div class="area__head">
+          <span class="area__num">03</span>
+          <h3 class="area__t" data-pt="Direito Médico" data-en="Medical Law">Direito Médico</h3>
+        </div>
+        <div class="area__body">
+          <p class="prose"
+             data-pt="A medicina e o direito se encontram no detalhe. Atuação em duas frentes: a defesa técnica do ato médico (prontuários, protocolos, responsabilidade civil profissional e institucional) e a tutela do paciente diante das operadoras de saúde, da negativa de cobertura à liminar para tratamentos e medicamentos de alto custo."
+             data-en="Medicine and law meet in the detail. Practice on two fronts: the technical defense of the medical act (records, protocols, professional and institutional liability) and the protection of patients before healthcare providers, from coverage denials to injunctions for high-cost treatments and medications.">
+            A medicina e o direito se encontram no detalhe. Atuação em duas frentes: a defesa técnica do ato médico (prontuários, protocolos, responsabilidade civil profissional e institucional) e a tutela do paciente diante das operadoras de saúde, da negativa de cobertura à liminar para tratamentos e medicamentos de alto custo.
+          </p>
+
+          <div class="sublist">
+            <div class="sublist__row">
+              <div class="sublist__col">
+                <div class="sublist__lbl" data-pt="Defesa do ato médico"
+                                           data-en="Defense of the medical act">Defesa do ato médico</div>
+                <ul class="area__list">
+                  <li data-pt="Defesa em ações de responsabilidade civil médica"
+                      data-en="Defense in medical liability claims">Defesa em ações de responsabilidade civil médica</li>
+                  <li data-pt="Análise técnica de prontuários e protocolos clínicos"
+                      data-en="Technical review of medical records and clinical protocols">Análise técnica de prontuários e protocolos clínicos</li>
+                  <li data-pt="Termos de consentimento informado e <i>compliance</i> clínico"
+                      data-en="Informed consent and clinical <i>compliance</i>">Termos de consentimento informado e <i>compliance</i> clínico</li>
+                </ul>
+              </div>
+              <div class="sublist__col">
+                <div class="sublist__lbl" data-pt="Tutela do paciente"
+                                           data-en="Patient protection">Tutela do paciente</div>
+                <ul class="area__list">
+                  <li data-pt="Liminares para procedimentos, cirurgias e tratamentos"
+                      data-en="Injunctions for procedures, surgeries, and treatments">Liminares para procedimentos, cirurgias e tratamentos</li>
+                  <li data-pt="Negativas de cobertura por planos e operadoras de saúde"
+                      data-en="Coverage denials by health plans and providers">Negativas de cobertura por planos e operadoras de saúde</li>
+                  <li data-pt="Acesso a medicamentos de alto custo e <i>off-label</i>"
+                      data-en="Access to high-cost and <i>off-label</i> medications">Acesso a medicamentos de alto custo e <i>off-label</i></li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="sublist__transversal">
+              <div class="sublist__lbl sublist__lbl--center" data-pt="Transversal" data-en="Cross-cutting">Transversal</div>
+              <ul class="area__list area__list--inline">
+                <li data-pt="Pareceres técnicos em matéria médico-jurídica"
+                    data-en="Technical opinions in medical-legal matters">Pareceres técnicos em matéria médico-jurídica</li>
+                <li data-pt="Disputas com operadoras de planos de saúde"
+                    data-en="Disputes with health-plan providers">Disputas com operadoras de planos de saúde</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- ============== INTERNATIONAL ============== -->
+  <section class="intl" id="internacional">
+    <div class="wrap">
+      <header class="sec-head sec-head--light reveal">
+        <span class="num">IV.</span>
+        <span class="kicker" data-pt="Atendimento Internacional"
+                              data-en="International Clients">Atendimento Internacional</span>
+      </header>
+
+      <h2 class="h2 sec-h2 sec-h2--light reveal"
+          data-pt="A ponte entre o cliente estrangeiro e a matéria brasileira."
+          data-en="A bridge between the foreign client and Brazilian matters.">
+        A ponte entre o cliente estrangeiro e a matéria brasileira.
+      </h2>
+
+      <div class="intl__grid">
+        <div class="intl__col reveal">
+          <p class="prose prose--light"
+             data-pt="O escritório atende também clientes estrangeiros, sejam pessoas físicas, famílias ou empresas, com interesses jurídicos, patrimoniais ou empresariais no Brasil. A atuação é construída a partir das áreas de competência do escritório, e abrange desde a aquisição imobiliária por não-residentes no litoral catarinense (Florianópolis, Balneário Camboriú, Itajaí, Itapema e Navegantes), até disputas contratuais, securitárias e sucessórias com componente transfronteiriço."
+             data-en="The firm also represents foreign clients, including individuals, families, and companies, with legal, patrimonial, or business interests in Brazil. The practice draws from the firm's existing areas of competence and ranges from real-estate acquisition by non-residents along the Santa Catarina coast (Florianópolis, Balneário Camboriú, Itajaí, Itapema, and Navegantes), to contractual, insurance, and succession disputes with cross-border elements.">
+            O escritório atende também clientes estrangeiros, sejam pessoas físicas, famílias ou empresas, com interesses jurídicos, patrimoniais ou empresariais no Brasil. A atuação é construída a partir das áreas de competência do escritório, e abrange desde a aquisição imobiliária por não-residentes no litoral catarinense (Florianópolis, Balneário Camboriú, Itajaí, Itapema e Navegantes), até disputas contratuais, securitárias e sucessórias com componente transfronteiriço.
+          </p>
+          <p class="prose prose--light"
+             data-pt="Toda a comunicação institucional pode ser conduzida em inglês: pareceres, contratos, correspondência judicial e administrativa, e a interlocução direta com o cliente, com escritórios estrangeiros parceiros, com consulados e representações diplomáticas, e com partes processuais residentes no exterior."
+             data-en="All institutional communication may be conducted in English: legal opinions, contracts, judicial and administrative correspondence, and direct interaction with the client, foreign co-counsel, consulates and diplomatic representations, and procedural parties residing abroad.">
+            Toda a comunicação institucional pode ser conduzida em inglês: pareceres, contratos, correspondência judicial e administrativa, e a interlocução direta com o cliente, com escritórios estrangeiros parceiros, com consulados e representações diplomáticas, e com partes processuais residentes no exterior.
+          </p>
+        </div>
+
+        <div class="intl__col reveal">
+          <div class="intl__lbl" data-pt="Frentes recorrentes" data-en="Recurring matters">Frentes recorrentes</div>
+          <ul class="intl__list">
+            <li data-pt="Aquisição, venda e estruturação patrimonial de imóveis por não-residentes"
+                data-en="Real-estate acquisition, sale, and patrimonial structuring for non-residents">Aquisição, venda e estruturação patrimonial de imóveis por não-residentes</li>
+            <li data-pt="Contratos internacionais, <i>joint ventures</i> e <i>due diligence</i> contratual"
+                data-en="International contracts, <i>joint ventures</i>, and contractual <i>due diligence</i>">Contratos internacionais, <i>joint ventures</i> e <i>due diligence</i> contratual</li>
+            <li data-pt="Disputas securitárias com partes ou apólices estrangeiras"
+                data-en="Insurance disputes involving foreign parties or policies">Disputas securitárias com partes ou apólices estrangeiras</li>
+            <li data-pt="Representação processual no Brasil de pessoas residentes no exterior"
+                data-en="Procedural representation in Brazil of clients residing abroad">Representação processual no Brasil de pessoas residentes no exterior</li>
+            <li data-pt="Pareceres sobre direito brasileiro a pedido de escritórios estrangeiros parceiros"
+                data-en="Brazilian-law opinions issued at the request of foreign co-counsel">Pareceres sobre direito brasileiro a pedido de escritórios estrangeiros parceiros</li>
+            <li data-pt="Interlocução institucional com consulados e representações diplomáticas"
+                data-en="Institutional liaison with consulates and diplomatic representations">Interlocução institucional com consulados e representações diplomáticas</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============== CONTACT ============== -->
+  <section class="contato" id="contato">
+    <div class="wrap">
+
+      <header class="sec-head reveal">
+        <span class="num">V.</span>
+        <span class="kicker" data-pt="Contato" data-en="Contact">Contato</span>
+      </header>
+
+      <div class="contato__top reveal">
+        <a class="btn btn--solid btn--big" href="https://wa.me/5548991880106?text=Ol%C3%A1%2C%20gostaria%20de%20conversar%20sobre%20uma%20demanda%20jur%C3%ADdica." target="_blank" rel="noopener">
+          <span data-pt="Iniciar conversa pelo WhatsApp" data-en="Start the conversation on WhatsApp">Iniciar conversa pelo WhatsApp</span>
+          <svg width="13" height="13" viewBox="0 0 13 13" fill="none" aria-hidden="true">
+            <path d="M2 6.5h9M6.5 2l4.5 4.5L6.5 11" stroke="currentColor" stroke-width="0.9" fill="none"/>
+          </svg>
+        </a>
+      </div>
+
+      <h2 class="h2 sec-h2 reveal"
+          data-pt="Toda atuação começa por uma conversa."
+          data-en="Every matter begins with a conversation.">
+        Toda atuação começa por uma conversa.
+      </h2>
+
+      <p class="prose reveal"
+         data-pt="Consultas iniciais são recebidas por WhatsApp, e-mail ou formulário institucional, com o mesmo cuidado de qualquer outra etapa do trabalho."
+         data-en="Initial consultations are received via WhatsApp, e-mail, or institutional form, with the same care given to every other stage of the work.">
+        Consultas iniciais são recebidas por WhatsApp, e-mail ou formulário institucional, com o mesmo cuidado de qualquer outra etapa do trabalho.
+      </p>
+
+      <div class="contato__grid">
+        <form class="form reveal" id="contactForm" action="https://formspree.io/f/mpqkvzgb" method="POST" novalidate>
+          <input type="hidden" name="_subject" value="Nova consulta — pedrofiliphi.com" />
+          <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" style="position:absolute;left:-9999px;" aria-hidden="true" />
+
+          <div class="form__row">
+            <label class="form__lbl" for="f_name" data-pt="Nome" data-en="Name">Nome</label>
+            <input class="form__in" id="f_name" name="name" type="text" required autocomplete="name" />
+          </div>
+
+          <div class="form__row form__row--two">
+            <div>
+              <label class="form__lbl" for="f_email" data-pt="E-mail" data-en="E-mail">E-mail</label>
+              <input class="form__in" id="f_email" name="email" type="email" required autocomplete="email" />
+            </div>
+            <div>
+              <label class="form__lbl" for="f_phone" data-pt="Telefone" data-en="Phone">Telefone</label>
+              <input class="form__in" id="f_phone" name="phone" type="tel" autocomplete="tel" />
+            </div>
+          </div>
+
+          <div class="form__row">
+            <label class="form__lbl" for="f_msg" data-pt="Resumo da consulta" data-en="Brief description">Resumo da consulta</label>
+            <textarea class="form__in" id="f_msg" name="message" rows="4" required></textarea>
+          </div>
+
+          <label class="form__check">
+            <input type="checkbox" name="lgpd_consent" required />
+            <span data-pt="Concordo com o tratamento dos meus dados pessoais para retorno desta solicitação, em conformidade com a LGPD."
+                  data-en="I consent to the processing of my personal data for the purpose of replying to this request, in accordance with Brazil's data-protection law (LGPD).">
+              Concordo com o tratamento dos meus dados pessoais para retorno desta solicitação, em conformidade com a LGPD.
+            </span>
+            &nbsp;<button type="button" class="form__pp" id="openLgpd" data-pt="(saber mais)" data-en="(learn more)">(saber mais)</button>
+          </label>
+
+          <button class="btn btn--solid form__submit" type="submit">
+            <span data-pt="Enviar consulta" data-en="Send inquiry">Enviar consulta</span>
+            <svg width="13" height="13" viewBox="0 0 13 13" fill="none" aria-hidden="true">
+              <path d="M2 6.5h9M6.5 2l4.5 4.5L6.5 11" stroke="currentColor" stroke-width="0.9" fill="none"/>
+            </svg>
+          </button>
+
+          <div class="form__msg" id="formMsg" role="status" aria-live="polite"></div>
+        </form>
+
+        <aside class="cinfo reveal">
+          <div class="cinfo__block">
+            <div class="cinfo__lbl" data-pt="E-mail" data-en="E-mail">E-mail</div>
+            <a class="cinfo__val" href="mailto:contato@pedrofiliphi.com">contato@pedrofiliphi.com</a>
+          </div>
+          <div class="cinfo__block">
+            <div class="cinfo__lbl">WhatsApp</div>
+            <a class="cinfo__val" href="https://wa.me/5548991880106?text=Ol%C3%A1%2C%20gostaria%20de%20conversar%20sobre%20uma%20demanda%20jur%C3%ADdica." target="_blank" rel="noopener">+ 55 (48) 99188-0106</a>
+          </div>
+          <div class="cinfo__block">
+            <div class="cinfo__lbl" data-pt="Sede" data-en="Office">Sede</div>
+            <address class="cinfo__val">
+              Av. João Sacavém, 571<br/>
+              Sala 904 &middot; Atlantis Trade Center<br/>
+              Centro &middot; Navegantes &middot; SC<br/>
+              88370-438
+            </address>
+          </div>
+          <div class="cinfo__block">
+            <div class="cinfo__lbl" data-pt="Atendimento" data-en="Hours">Atendimento</div>
+            <div class="cinfo__val"
+                 data-pt="Segunda a sexta &middot; 09h às 18h<br/>Mediante agendamento prévio"
+                 data-en="Monday to Friday &middot; 9am to 6pm<br/>By appointment only">
+              Segunda a sexta &middot; 09h às 18h<br/>Mediante agendamento prévio
+            </div>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============== FOOTER ============== -->
+  <footer class="ftr">
+    <div class="wrap">
+      <div class="ftr__top">
+        <div class="ftr__brand">
+          <svg class="ftr__mark" viewBox="0 0 240 240" fill="none" aria-hidden="true">
+            <g fill="none" stroke="#C9A96E" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M 182,62 A 88,88 0 1,0 182,186" stroke-width="1.2"/>
+              <circle cx="120" cy="54" r="3.6" fill="#C9A96E" stroke="none"/>
+              <line x1="120" y1="54" x2="120" y2="196" stroke-width="1.4"/>
+              <path d="M 56,70 L 120,70 A 44,33 0 0,1 120,136 L 72,136" stroke-width="1.4"/>
+              <line x1="98" y1="196" x2="142" y2="196" stroke-width="1.6"/>
+            </g>
+          </svg>
+          <div class="ftr__name">Pedro Filiphi</div>
+          <div class="ftr__role" data-pt="Advocacia &amp; Consultoria Jurídica"
+                                  data-en="Counsel &amp; Legal Advisory">Advocacia &amp; Consultoria Jurídica</div>
+        </div>
+
+        <div class="ftr__cols">
+          <div class="ftr__col">
+            <div class="ftr__lbl" data-pt="Contato" data-en="Contact">Contato</div>
+            <a class="ftr__a" href="mailto:contato@pedrofiliphi.com">contato@pedrofiliphi.com</a>
+            <a class="ftr__a" href="https://wa.me/5548991880106?text=Ol%C3%A1%2C%20gostaria%20de%20conversar%20sobre%20uma%20demanda%20jur%C3%ADdica." target="_blank" rel="noopener">+ 55 (48) 99188-0106</a>
+          </div>
+          <div class="ftr__col">
+            <div class="ftr__lbl" data-pt="Sede" data-en="Office">Sede</div>
+            <div class="ftr__a">Av. João Sacavém, 571</div>
+            <div class="ftr__a">Sala 904 &middot; Atlantis Trade Center</div>
+            <div class="ftr__a">Centro &middot; Navegantes &middot; SC</div>
+            <div class="ftr__a">88370-438</div>
+          </div>
+          <div class="ftr__col">
+            <div class="ftr__lbl" data-pt="Inscrições" data-en="Bar admissions">Inscrições</div>
+            <div class="ftr__a">OAB / SC&nbsp;&nbsp;55.825</div>
+            <div class="ftr__a">OAB / SP&nbsp;&nbsp;495.951</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="ftr__rule"></div>
+
+      <div class="ftr__bot">
+        <div class="ftr__cr">
+          © <span id="year">2026</span> Pedro Filiphi &middot; pedrofiliphi.com
+          &nbsp;&middot;&nbsp;
+          <button class="ftr__pp" id="openLgpdFooter" data-pt="Política de Privacidade &middot; LGPD" data-en="Privacy Policy &middot; LGPD">Política de Privacidade &middot; LGPD</button>
+        </div>
+        <div class="ftr__disclaimer"
+             data-pt="Conteúdo institucional. Em conformidade com o Provimento nº 205/2021 da OAB e o Código de Ética e Disciplina, este sítio não oferece serviços, captação de clientela ou promessas de resultado."
+             data-en="Institutional content for informational purposes only. This website does not constitute legal advice, advertising, or solicitation; past results do not guarantee future outcomes.">
+          Conteúdo institucional. Em conformidade com o Provimento nº 205/2021 da OAB e o Código de Ética e Disciplina, este sítio não oferece serviços, captação de clientela ou promessas de resultado.
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <a class="wa-float" id="waFloat" href="https://wa.me/5548991880106?text=Ol%C3%A1%2C%20gostaria%20de%20conversar%20sobre%20uma%20demanda%20jur%C3%ADdica." target="_blank" rel="noopener" aria-label="WhatsApp">
+    <svg viewBox="0 0 32 32" fill="none" aria-hidden="true">
+      <path d="M16 3C8.82 3 3 8.82 3 16c0 2.3.6 4.46 1.66 6.34L3 29l6.85-1.62A12.94 12.94 0 0 0 16 29c7.18 0 13-5.82 13-13S23.18 3 16 3z" stroke="currentColor" stroke-width="1" fill="none"/>
+      <path d="M11.6 10.3c-.3-.7-.6-.7-.9-.7h-.7c-.3 0-.7.1-1 .5-.4.4-1.4 1.3-1.4 3.3 0 1.9 1.4 3.8 1.6 4.1.2.3 2.7 4.3 6.7 5.9 3.3 1.3 4 1 4.7.9.7-.1 2.3-.9 2.6-1.8.3-.9.3-1.7.2-1.9-.1-.2-.4-.3-.8-.5-.4-.2-2.3-1.1-2.7-1.3-.4-.1-.6-.2-.9.2-.3.4-1 1.3-1.2 1.5-.2.3-.4.3-.8.1-.4-.2-1.6-.6-3-1.9-1.1-1-1.9-2.2-2.1-2.6-.2-.4 0-.6.2-.8.2-.2.4-.4.5-.7.2-.2.3-.4.4-.7.1-.3.1-.5 0-.7-.1-.2-.9-2.1-1.2-2.9z" fill="currentColor"/>
+    </svg>
+  </a>
+
+  <!-- ============== LGPD MODAL ============== -->
+  <div class="modal" id="lgpdModal" aria-hidden="true" role="dialog" aria-labelledby="lgpdTitle">
+    <div class="modal__overlay" data-close></div>
+    <div class="modal__panel" role="document">
+      <button class="modal__close" data-close aria-label="Fechar">×</button>
+      <h3 class="modal__t" id="lgpdTitle" data-pt="Política de Privacidade &middot; LGPD"
+                                            data-en="Privacy Policy &middot; LGPD">Política de Privacidade &middot; LGPD</h3>
+
+      <div class="modal__body" data-pt-html data-pt="
+        <p>Esta Política de Privacidade dispõe sobre o tratamento de dados pessoais realizado por <strong>Pedro Filiphi, Advocacia &amp; Consultoria Jurídica</strong>, em conformidade com a Lei Geral de Proteção de Dados (Lei nº 13.709/2018, LGPD) e o Provimento nº 205/2021 da OAB.</p>
+
+        <h4>1. Dados coletados</h4>
+        <p>Por meio do formulário de contato, são coletados: nome, e-mail, telefone e o resumo da consulta. Não são coletados dados sensíveis sem solicitação expressa do titular.</p>
+
+        <h4>2. Finalidade</h4>
+        <p>Os dados são tratados exclusivamente para retorno da consulta inicial e eventual formação de relação cliente-advogado. Não há cessão a terceiros, tampouco uso para fins promocionais.</p>
+
+        <h4>3. Retenção</h4>
+        <p>Os dados são mantidos pelo prazo necessário ao atendimento da consulta. Em caso de não-contratação dos serviços, os dados são descartados em até 90 dias, salvo obrigação legal de guarda.</p>
+
+        <h4>4. Direitos do titular</h4>
+        <p>O titular pode, a qualquer momento, solicitar acesso, retificação, anonimização ou exclusão dos seus dados, bem como informações sobre o seu tratamento, pelo e-mail <a href='mailto:contato@pedrofiliphi.com'>contato@pedrofiliphi.com</a>.</p>
+
+        <h4>5. Encarregado pelo Tratamento de Dados (DPO)</h4>
+        <p>Pedro Filiphi, <a href='mailto:contato@pedrofiliphi.com'>contato@pedrofiliphi.com</a></p>
+
+        <h4>6. Sigilo profissional</h4>
+        <p>O tratamento de dados observa o sigilo profissional garantido pelo Estatuto da Advocacia (Lei nº 8.906/1994) e o Código de Ética e Disciplina da OAB.</p>
+      "
+      data-en-html data-en="
+        <p>This Privacy Policy governs the processing of personal data carried out by <strong>Pedro Filiphi, Counsel &amp; Legal Advisory</strong>, in accordance with Brazil's General Data Protection Law (Law No. 13,709/2018, LGPD) and Provision No. 205/2021 of the Brazilian Bar Association.</p>
+
+        <h4>1. Data collected</h4>
+        <p>The contact form collects: name, e-mail, phone, and a brief description of the matter. No sensitive data is collected without the data subject's express request.</p>
+
+        <h4>2. Purpose</h4>
+        <p>Data is processed exclusively for the purpose of replying to the initial inquiry and the possible formation of a client-counsel relationship. Data is not transferred to third parties, nor used for promotional purposes.</p>
+
+        <h4>3. Retention</h4>
+        <p>Data is retained for the period necessary to address the inquiry. If no engagement is formed, data is discarded within 90 days, unless a legal duty of retention applies.</p>
+
+        <h4>4. Subject's rights</h4>
+        <p>The data subject may, at any time, request access, rectification, anonymization, or deletion of their data, as well as information about its processing, by e-mailing <a href='mailto:contato@pedrofiliphi.com'>contato@pedrofiliphi.com</a>.</p>
+
+        <h4>5. Data Protection Officer (DPO)</h4>
+        <p>Pedro Filiphi, <a href='mailto:contato@pedrofiliphi.com'>contato@pedrofiliphi.com</a></p>
+
+        <h4>6. Professional secrecy</h4>
+        <p>Data processing observes the professional secrecy guaranteed by the Brazilian Bar Statute (Law No. 8,906/1994) and the OAB's Code of Ethics and Discipline.</p>
+      "></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
